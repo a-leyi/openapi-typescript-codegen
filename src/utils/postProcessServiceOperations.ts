@@ -3,7 +3,7 @@ import type { Service } from '../client/interfaces/Service';
 import { flatMap } from './flatMap';
 
 export const postProcessServiceOperations = (service: Service): Operation[] => {
-    const names = new Map<string, number>();
+    // const names = new Map<string, number>();
 
     return service.operations.map(operation => {
         const clone = { ...operation };
@@ -14,12 +14,12 @@ export const postProcessServiceOperations = (service: Service): Operation[] => {
         clone.imports.push(...flatMap(clone.results, result => result.imports));
 
         // Check if the operation name is unique, if not then prefix this with a number
-        const name = clone.name;
-        const index = names.get(name) || 0;
-        if (index > 0) {
-            clone.name = `${name}${index}`;
-        }
-        names.set(name, index + 1);
+        // const name = clone.name;
+        // const index = names.get(name) || 0;
+        // if (index > 0) {
+        //     clone.name = `${name}${index}`;
+        // }
+        // names.set(name, index + 1);
 
         return clone;
     });

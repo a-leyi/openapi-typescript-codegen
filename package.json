@@ -1,15 +1,15 @@
 {
-    "name": "openapi-typescript-codegen",
-    "version": "0.29.0",
+    "name": "openapi-typescript-codegen-leyiya",
+    "version": "0.33.0",
     "description": "Library that generates Typescript clients based on the OpenAPI specification.",
     "author": "Ferdi Koomen",
-    "homepage": "https://github.com/ferdikoomen/openapi-typescript-codegen",
+    "homepage": "https://github.com/a-leyi/openapi-typescript-codegen",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ferdikoomen/openapi-typescript-codegen.git"
+        "url": "git+https://github.com/a-leyi/openapi-typescript-codegen.git"
     },
     "bugs": {
-        "url": "https://github.com/ferdikoomen/openapi-typescript-codegen/issues"
+        "url": "https://github.com/a-leyi/openapi-typescript-codegen/issues"
     },
     "license": "MIT",
     "keywords": [
@@ -55,7 +55,7 @@
         "test:e2e": "jest --selectProjects E2E --runInBand --verbose",
         "eslint": "eslint .",
         "eslint:fix": "eslint . --fix",
-        "prepare": "npm run clean && npm run release",
+        "prepare": "",
         "codecov": "codecov --token=66c30c23-8954-4892-bef9-fbaed0a2e42b",
         "docker": "docker build -t eeelenbaas/openapi-typescript-codegen ."
     },
@@ -67,17 +67,6 @@
         "handlebars": "^4.7.8"
     },
     "devDependencies": {
-        "@angular-devkit/build-angular": "19.2.10",
-        "@angular/animations": "17.3.3",
-        "@angular/cli": "17.3.3",
-        "@angular/common": "17.3.3",
-        "@angular/compiler": "17.3.3",
-        "@angular/compiler-cli": "17.3.3",
-        "@angular/core": "17.3.3",
-        "@angular/forms": "17.3.3",
-        "@angular/platform-browser": "17.3.3",
-        "@angular/platform-browser-dynamic": "17.3.3",
-        "@angular/router": "17.3.3",
         "@babel/cli": "7.24.8",
         "@babel/core": "7.26.7",
         "@babel/preset-env": "7.26.0",
